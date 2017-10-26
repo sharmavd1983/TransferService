@@ -1,0 +1,1 @@
+java -DbaseDir=. -Dlog4j.configuration=file:"./config/properties/log4j.properties" -jar transfer-service-1.0.RELEASE.jar --server.port=8100

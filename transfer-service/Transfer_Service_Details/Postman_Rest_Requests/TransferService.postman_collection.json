@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TransferService",
+		"_postman_id": "4eddeb35-75ea-b20f-5744-9b81a3372564",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8100/accounts/transfer",
+			"request": {
+				"url": "http://localhost:8100/accounts/transfer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"payerClientCode\" : \"AK001\",\n\t\"payeeClientCode\" : \"D002\",\n\t\"amount\" : \"5000\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8100/accounts/create",
+			"request": {
+				"url": "http://localhost:8100/accounts/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"clientName\" : \"Ankit\",\n\t\"clientCode\" : \"AK001\",\n\t\"initialBalance\" : \"1000\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
